@@ -8600,6 +8600,7 @@ input, select, textarea {
 
 			#wrapper.divided > .invert:first-child {
 				box-shadow: none !important;
+<<<<<<< HEAD
 			}
 			
 
@@ -8801,3 +8802,6 @@ popup.primary,
 	.popup.primary:active {
 		background-color: #1ebdd1;
 	}
+=======
+			}
+>>>>>>> ea6b73cce72761356d195bc17b6d697c0636531a

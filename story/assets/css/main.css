@@ -8601,3 +8601,203 @@ input, select, textarea {
 			#wrapper.divided > .invert:first-child {
 				box-shadow: none !important;
 			}
+			
+
+
+			/* Popup container */
+.popup {
+	position: relative;
+	cursor: pointer;
+	display: inline-block;
+	-moz-appearance: none;
+	-webkit-appearance: none;
+	-ms-appearance: none;
+	appearance: none;
+	-moz-transition: background-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out, color 0.2s ease-in-out;
+	-webkit-transition: background-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out, color 0.2s ease-in-out;
+	-ms-transition: background-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out, color 0.2s ease-in-out;
+	transition: background-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out, color 0.2s ease-in-out;
+	border: 0;
+	font-weight: 400;
+	letter-spacing: 0.125em;
+	text-align: center;
+	text-decoration: none;
+	text-transform: uppercase;
+	white-space: nowrap;
+	font-size: 0.75rem;
+	max-width: 20rem;
+	height: 3.75em;
+	line-height: 3.75em;
+	border-radius: 3.75em;
+	padding: 0 2.5em;
+	text-overflow: ellipsis;
+	-webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* The actual popup (appears on top) */
+.popup .popuptext {
+  visibility: hidden;
+  width: 400px;
+  height: 300px;
+  background-color: rgba(85, 85, 85, 0);
+  color: #fff;
+  text-align: center;
+  border-radius: 50px;
+  padding: 8px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -80px;
+}
+
+/* Popup arrow */
+.popup .popuptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+/* Toggle this class when clicking on the popup container (hide and show the popup) */
+.popup .show {
+  visibility: visible;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s
+}
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity:1 ;}
+}
+
+input[type="submit"].icon:before,
+input[type="reset"].icon:before,
+input[type="popup"].icon:before,
+popup.icon:before,
+.popup.icon:before {
+	margin-right: 0.5rem;
+}
+
+input[type="submit"].fit,
+input[type="reset"].fit,
+input[type="popup"].fit,
+popup.fit,
+.popup.fit {
+	width: 100%;
+}
+
+input[type="submit"].small,
+input[type="reset"].small,
+input[type="popup"].small,
+popup.small,
+.popup.small {
+	font-size: 0.6rem;
+	height: 3.325em;
+	line-height: 3.325em;
+	border-radius: 3.325em;
+	padding: 0 2em;
+}
+
+input[type="submit"].large,
+input[type="reset"].large,
+input[type="popup"].large,
+popup.large,
+.popup.large {
+	font-size: 0.8rem;
+	height: 4em;
+	line-height: 4em;
+	border-radius: 4em;
+	padding: 0 3em;
+}
+
+input[type="submit"].wide,
+input[type="reset"].wide,
+input[type="popup"].wide,
+popup.wide,
+.popup.wide {
+	min-width: 14em;
+}
+
+input[type="submit"].disabled, input[type="submit"]:disabled,
+input[type="reset"].disabled,
+input[type="reset"]:disabled,
+input[type="popup"].disabled,
+input[type="popup"]:disabled,
+popup.disabled,
+popup:disabled,
+.popup.disabled,
+.popup:disabled {
+	pointer-events: none;
+	opacity: 0.25;
+}
+
+input[type="submit"],
+input[type="reset"],
+input[type="popup"],
+popup,
+.popup {
+background-color: transparent;
+box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.2);
+color: #000000 !important;
+}
+
+input[type="submit"]:hover,
+input[type="reset"]:hover,
+input[type="popup"]:hover,
+popup:hover,
+.popup:hover {
+	box-shadow: inset 0 0 0 1px #47D3E5;
+	color: #47D3E5 !important;
+}
+
+input[type="submit"]:active,
+input[type="reset"]:active,
+input[type="popup"]:active,
+popup:active,
+.popup:active {
+	background-color: rgba(71, 211, 229, 0.2);
+	box-shadow: inset 0 0 0 1px #47D3E5;
+	color: #47D3E5 !important;
+}
+
+input[type="submit"].primary,
+input[type="reset"].primary,
+input[type="popup"].primary,
+popup.primary,
+.popup.primary {
+	background-color: #000000;
+	box-shadow: none;
+	color: #ffffff !important;
+}
+
+	input[type="submit"].primary:hover,
+	input[type="reset"].primary:hover,
+	input[type="popup"].primary:hover,
+	popup.primary:hover,
+	.popup.primary:hover {
+		background-color: #47D3E5;
+	}
+
+	input[type="submit"].primary:active,
+	input[type="reset"].primary:active,
+	input[type="popup"].primary:active,
+	popup.primary:active,
+	.popup.primary:active {
+		background-color: #1ebdd1;
+	}
